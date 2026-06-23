@@ -103,7 +103,7 @@ function MyOrder() {
         </p>
       </div>
 
-      {/* TABS FILTER: మొబైల్‌లో విరిగిపోకుండా పక్కకి స్క్రోల్ అయ్యేలా మార్చాము */}
+      {/* TABS FILTER: */}
       <div className="max-w-7xl mx-auto flex gap-2 sm:gap-3 mb-6 sm:mb-8 overflow-x-auto pb-2 scrollbar-none whitespace-nowrap">
         {tabs.map((tab) => (
           <button
@@ -124,7 +124,7 @@ function MyOrder() {
       {/* ORDERS LIST CONTAINER */}
       <div className="max-w-7xl mx-auto">
         
-        {/* 1. DESKTOP VIEW: పెద్ద స్క్రీన్స్‌లో టేబుల్ కనిపిస్తుంది (hidden md:block) */}
+        {/* 1. DESKTOP VIEW:(hidden md:block) */}
         <div className="hidden md:block bg-white rounded-[24px] shadow-lg border border-[#F0E6D8] hover:border-[#D4A24C] hover:shadow-2xl transition-all duration-500 overflow-hidden">
           <table className="w-full text-left border-collapse">
             <thead>
@@ -171,7 +171,7 @@ function MyOrder() {
           </table>
         </div>
 
-        {/* 2. MOBILE VIEW: మొబైల్‌లో అందమైన కార్డ్స్ కనిపిస్తాయి (md:hidden) */}
+        {/* 2. MOBILE VIEW: (md:hidden) */}
         <div className="block md:hidden space-y-4">
           {filteredOrders.length > 0 ? (
             filteredOrders.map((order, i) => (
@@ -239,7 +239,7 @@ function MyOrder() {
               </button>
             </div>
 
-            {/* Modal Body: మొబైల్‌లో స్క్రోలింగ్ కోసం overflow-y-auto యాడ్ చేసాం */}
+            {/* Modal Body:*/}
             <div className="p-5 sm:p-6 space-y-4 sm:space-y-5 text-xs sm:text-sm text-[#1E1612] overflow-y-auto">
               
               {/* Product Info */}
